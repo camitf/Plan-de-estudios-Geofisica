@@ -67,7 +67,7 @@ body {
   .ramo:hover {
     background: linear-gradient(145deg, #99eaee, #75dfe0);
     box-shadow: 6px 6px 10px #88bcbd, -6px -6px 10px #99eaee;
-    color: #00100a;
+    color: #336666;
     transform: translateY(-3px);
   }
 
