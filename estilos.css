@@ -78,7 +78,7 @@ body {
 
   .ramo.bloqueado {
     background-color: #f3f3f3;
-    color: #999;
+    color: #00474a;
     border-style: dashed;
     cursor: not-allowed;
     box-shadow: none;
