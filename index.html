@@ -1,0 +1,101 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan de estudios de Geofísica FCAGLP-UNLP</title>
+  <meta name="description" content="Explora la malla curricular interactiva de Geofísica de la UNLP. Descubre requisitos por semestre y desbloquea ramos al aprobar.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<body>
+    <h1>Geofísica UNLP</h1>
+    <div class="malla-grid">
+      <div class="semestre" id="sem1">
+         <h2>Primer Año</h2>
+         <h3>Anuales</h3>
+         <div class="ramo" id="AM1" onclick="aprobar('AM1')">Análisis Matemático I</div>
+         <div class="ramo" id="algebra" onclick="aprobar('algebra')">Álgebra</div>
+         <div class="ramo" id="fundamentos" onclick="aprobar('fundamentos')">Fundamentos de Geología</div>
+         <div class="ramo" id="geogral" onclick="aprobar('geogral')">Geofísica General</div>
+
+         <h3>Libre</h3>
+         <div class="ramo" id="ingles" onclick="aprobar('ingles')">Exámen de Inglés</div>
+      </div>
+
+      <div class="semestre" id="sem2">
+         <h2>Segundo Año</h2>
+         <h3>Anuales</h3>
+         <div class="ramo bloqueado" id="refe" onclick="aprobar('refe')">Referenciación en Geofísica</div>
+         <div class="ramo bloqueado" id="anyp" onclick="aprobar('anyp')">Análisis Numérico y Programación</div>
+
+         <h3>1° Semestre</h3>
+         <div class="ramo bloqueado" id="AM2" onclick="aprobar('AM2')">Análisis Matemático 2</div>
+         <div class="ramo bloqueado" id="fisica1" onclick="aprobar('fisica1')">Física General 1</div>
+
+         <h3>2° Semestre</h3>
+         <div class="ramo bloqueado" id="mates1" onclick="aprobar('mates1')">Matemáticas Especiales 1</div>
+         <div class="ramo bloqueado" id="fisica2" onclick="aprobar('fisica2')">Física General 2</div>
+      </div>
+
+      <div class="semestre" id="sem3">
+         <h2>Tercer Año</h2>
+         <h3>Anuales</h3>
+         <div class="ramo bloqueado" id="geoest" onclick="aprobar('geoest')">Geología Estructural</div>
+
+         <h3>1° Semestre</h3>
+         <div class="ramo bloqueado" id="mates2" onclick="aprobar('mates2')">Matemáticas Especiales 2</div>
+         <div class="ramo bloqueado" id="fisica3" onclick="aprobar('fisica3')">Física General 3</div>
+         <div class="ramo bloqueado" id="estadistica" onclick="aprobar('estadistica')">Estadística Aplicada</div>
+
+         <h3>2° Semestre</h3>
+         <div class="ramo bloqueado" id="geodesia" onclick="aprobar('geodesia')">Geodesia</div>
+         <div class="ramo bloqueado" id="mecanica" onclick="aprobar('mecanica')">Mecánica del Continuo</div>
+         <div class="ramo bloqueado" id="analisisseñales" onclick="aprobar('analisisseñales')">Análisis de Señales en Geofísica</div>
+      </div>
+
+      <div class="semestre" id="sem4">
+         <h2>Cuarto Año</h2>
+         <h3>Anuales</h3>
+         <div class="ramo bloqueado" id="sismo" onclick="aprobar('sismo')">Sismología</div>
+         <div class="ramo bloqueado" id="geomag" onclick="aprobar('geomag')">Geomagnetismo y Aeronomía</div>
+
+         <h3>1° Semestre</h3>
+         <div class="ramo bloqueado" id="gravi" onclick="aprobar('gravi')">Gravimetría</div>
+         <div class="ramo bloqueado" id="FAM" onclick="aprobar('FAM')">Física de la Atmósfera y Meteorología</div>
+
+         <h3>2° Semestre</h3>
+         <div class="ramo bloqueado" id="FIT" onclick="aprobar('FIT')">Física del Interior Terrestre</div>
+         <div class="ramo bloqueado" id="geoarg" onclick="aprobar('geoarg')">Geología Argentina y Aplicada</div>
+      </div>
+      <div class="semestre" id="sem5">
+         <h2>Quinto Año</h2>
+         <h3>Anuales</h3>
+         <div class="ramo bloqueado" id="MSisP" onclick="aprobar('MSisP')">Métodos Sísmicos de Prospección</div>
+
+         <h3>1° Semestre</h3>
+         <div class="ramo bloqueado" id="MPotP" onclick="aprobar('MPotP')">Métodos Potenciales de Prospección</div>
+         <div class="ramo bloqueado" id="MElecP" onclick="aprobar('MElecP')">Métodos Eléctricos de Prospección</div>
+         <div class="ramo bloqueado" id="instgeof" onclick="aprobar('instgeof')">Intrumental Geofísico</div>
+
+         <h3>2° Semestre</h3>
+         <div class="ramo bloqueado" id="seminario" onclick="aprobar('seminario')">Seminario</div>
+         <div class="ramo bloqueado" id="tesis" onclick="aprobar('tesis')">Tesis de Grado</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+   <style>
+     h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #2d9396;
+      text-align: center;
+      margin-bottom: 40px;
+     }
+
+   </style>
+
+</body>
+</html>

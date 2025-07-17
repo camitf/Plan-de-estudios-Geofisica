@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #def9fb;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #2d9396;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .malla-grid {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+
+  .semestre {
+    min-width: 220px;
+    background-color: #c9f9fd;
+    border: 2px solid #99eaee;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px #00100a;
+  }
+
+  .semestre h2 {
+    text-align: center;
+    color: #116d70;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cafdff;
+    padding-bottom: 6px;
+  }
+
+  .semestre h3 {
+    text-align: left;
+    color: #116d70;
+    font-size: 1em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #cafdff;
+    padding-bottom: 6px;
+  }
+
+  .ramo {
+    background: linear-gradient(145deg, #cafdff, #cafdff);
+    border: 1px solid #6acccf;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: #00474a;
+    font-weight: 600;
+    /* Sombra para efecto 3D */
+    box-shadow: 4px 4px 8px #82bebf, -4px -4px 8px #99eaee;
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+
+  .ramo:hover {
+    background: linear-gradient(145deg, #99eaee, #75dfe0);
+    box-shadow: 6px 6px 10px #88bcbd, -6px -6px 10px #99eaee;
+    color: #00100a;
+    transform: translateY(-3px);
+  }
+
+  .ramo:active {
+    box-shadow: inset 3px 3px 5px #88bcbd, inset -3px -3px 5px #bffeff;
+    transform: translateY(1px);
+  }
+
+  .ramo.bloqueado {
+    background-color: #f3f3f3;
+    color: #999;
+    border-style: dashed;
+    cursor: not-allowed;
+    box-shadow: none;
+    background: none;
+  }
+
+  .ramo.aprobado {
+    background: linear-gradient(145deg, #0dc2c9, #0a979c) !important;
+    color: #054749;
+    border-color: #059499;
+    text-decoration: line-through;
+    font-style: italic;
+    box-shadow: 4px 4px 8px #7ed8da, -4px -4px 8px #7ebcbd;
+  }
